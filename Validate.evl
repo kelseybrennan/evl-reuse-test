@@ -1,0 +1,6 @@
+context Book {
+    constraint ID {
+        check : self.bookId > 100
+        message : "An book ID must be greater than 100 but ID is " + self.bookId
+    }
+}
